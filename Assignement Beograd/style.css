@@ -1,0 +1,146 @@
+/* Opšti stilovi */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Stilizacija za slike i tekst */
+.slika {
+    float: left;
+    shape-outside: circle(50%);
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    clip-path: circle(50%);
+}
+
+.tekst {
+    font-size: 18px;
+    margin: 20px;
+}
+
+/* Resetovanje margina i paddinga za sve elemente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stilizacija celog tela stranice */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header i navigacija */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+    background: #555;
+    color: #fff;
+}
+
+/* Glavni sadržaj */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.slika {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.slika:hover {
+    transform: scale(1.05);
+}
+
+.tekst {
+    padding: 20px;
+    background: #fff;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Pseudoelementi */
+.tekst::before {
+    content: "Informacije o Beogradu:";
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Pseudoklase */
+p::first-line {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Animacije */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 2s ease-in;
+}
